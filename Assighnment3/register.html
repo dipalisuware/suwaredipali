@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page</title>
+    <style>
+    
+         .lays1{
+    border-radius: 15px;
+    padding: 13px;
+    background-color: white;
+}
+.demo{
+    display:block;
+    margin-right:auto ;
+    margin-left:auto ;
+    align-content: center;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    width: 500px;
+    height:430px;
+    background-color: aliceblue;
+    background-size: cover;
+    border-radius: 10px;
+
+    
+
+
+}
+body{
+    background-image: url(back.png);
+    background-size: cover;
+}
+.btn{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}
+        
+    
+    </style>
+</head>
+<body  >
+    <h1></h1><br>
+    <br><br>
+    <form method="post" action="#">
+        <div class="demo">
+            <h1>
+
+            </h1>
+            <i>
+            <h2><span style="font-size:50px">Resister here</span></h2></i>
+            <br>
+            <b>
+            <label style="font-size:20px">Enter name :</label></b>
+            <input type="text" Id="name" placeholder="name"/>
+            <br><br><b>
+            <label style="font-size:20px">Enter email :</label>
+            <input type="email" Id="email" placeholder="email"/></b>
+            <br><br>
+            <b>
+            <label style="font-size:20px"> Mobile no.:</label>
+            <input type="tell" Id="mobile" placeholder="Mobile number"/><b>
+            <br><br><br>
+            <label style="font-size:20px">Password :</label>
+            <input type="password" name="password" Id="password" placeholder="password"/></b>
+            <br>
+            <br><br>
+        
+            <a><input type="button" value="Submit" onclick="checkResister()" class="btn"/></a>
+        </div>
+    </form>
+
+   
+    <script>
+        function checkResister()
+        {
+            var n= document.getElementById("name");
+            var e = document.getElementById("email");
+            var m = document.getElementById("Mobile");
+            var p = document.getElementById("Password");
+            if( n.value==''|| e.value==''|| m.value==''|| p=='')
+            {
+                alert("name or email or mobile or password is required");
+            }
+            else{
+                alert("Welcome to RMCET");
+            }
+
+
+        }
+    </script>
+    
+</body>
+</html>

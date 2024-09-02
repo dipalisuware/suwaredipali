@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body  >
+    <h1></h1><br><br><br><br>
+    <form method="post" action="#">
+       <div class="page">
+       
+        <i>
+        <h2> <span style="font-size:50px">Login Form </span></h2></i>
+        <br>
+        <b>
+        <label>Username :</label>
+        </b>
+        <input type="text" placeholder="email, name or mobile no" name="name" Id="Username"/>
+        <br><br>
+        <b>
+        <label>Password :</label>   
+
+        <input type="password" placeholder="password" Id="password"/>
+        </b>
+        <br><br><br>
+        
+       <input type="checkbox" name="name" onclick="show()" Id="password"/><span id="hide">showpassword</span>
+       
+       <br><br>
+       <br>
+        <a href="" class="btn" onclick="checkLogin()">Login</a>
+        <br>
+        <br>
+        <br><br>
+        <a href="register.html" class="btn" >Register</a>
+         
+       </div>
+        
+    </form>
+    <script>
+        function checkLogin()
+        {
+            var u= document.getElementById("Username");
+        
+            var p = document.getElementById("password");
+            if( u.value==''||p.value=='')
+            {
+                alert("Usernamename or password is required");
+            }
+            else{
+                alert("Welcome to RMCET");
+            }
+        }
+        function show(){
+            var p = document.getElementById("password")
+            var s = document.getElementById("hide")
+            if(p.type== "password")
+            {
+                p.type="text";
+                s.textContent="hidepassword";
+            }
+            else
+            {
+                p.type="password";
+                s.textContent="showpassword";
+            }
+            
+        }
+    </script>
+</body>
+</html>
